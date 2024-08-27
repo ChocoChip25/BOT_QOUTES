@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include html2canvas library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Quote</h1>
+        <div class="quote-options">
+            <button class="quote-btn" id="createQuote">Create Quote</button>
+        </div>
+
+        <div class="image-selection" id="imageSelection">
+            <h2>Select an Image</h2>
+            <div class="images">
+                <img src="image1.jpg" alt="Image 1" class="selectable-image">
+                <img src="image2.jpg" alt="Image 2" class="selectable-image">
+                <img src="image3.jpg" alt="Image 3" class="selectable-image">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+        <div class="text-input" id="textInput">
+            <h2>Enter Your Text</h2>
+            <textarea id="userText" placeholder="Enter your quote here..."></textarea>
+            <button id="generateQuote">Generate Quote</button>
+        </div>
+
+        <div class="quote-display" id="quoteDisplay">
+            <h2>Your Generated Quote</h2>
+            <div id="quoteResult"></div>
+            <!-- Add the download button here -->
+            <button id="downloadQuote" style="display: none;">Download Quote</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

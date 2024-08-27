@@ -1,0 +1,97 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.quote-options {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.quote-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quote-btn:hover {
+    background-color: #2ecc71;
+}
+
+.image-selection, .text-input, .quote-display {
+    display: none;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.selectable-image {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.selectable-image:hover {
+    transform: scale(1.05);
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#generateQuote {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#generateQuote:hover {
+    background-color: #3498db;
+}
+
+#quoteResult {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+}
